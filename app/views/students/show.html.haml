@@ -1,0 +1,10 @@
+.wrapper_with_padding
+  %h1= @stu.name
+  %p= @stu.course1
+  %p= @stu.course2
+  %p= @stu.course3
+
+  .buttons
+    = link_to "All Students", students_path, class: "button"
+    = link_to "Fix Doc", edit_student_path(@stu), class: "button"
+    = link_to "Trash It",  student_path(@stu), method: :delete, data: {confirm: "Are you sure?"},class: "button"
