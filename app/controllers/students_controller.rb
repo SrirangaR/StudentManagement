@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
 
 
   def index
-    @students = Student.all.order(:desc)
+    @students = Student.all.order()
   end
 
   def show
